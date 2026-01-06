@@ -7,7 +7,43 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/arun-2057/arun-portfolio-3proj.git"
+  }{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site for Arun Lama — Data Analyst",
+  "homepage": "https://arunlama0.com.np",
+  "bugs": {
+    "url": "https://github.com/arun-2057/arun-portfolio-3proj/issues"
   },
+  "author": "Arun Lama <lamaarun2001@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.0"
+  }
+}
+,
   "bugs": {
     "url": "https://github.com/arun-2057/arun-portfolio-3proj/issues"
   },
