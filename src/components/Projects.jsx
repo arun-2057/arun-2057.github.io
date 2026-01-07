@@ -56,15 +56,24 @@ export default function Projects() {
                 aria-label={`Open ${p.title} in a new tab`}
                 className="block"
               >
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  loading="lazy"
-                  width="800"
-                  height="600"
-                  onError={handleImgError}
-                  className="w-full h-56 object-cover group-hover:opacity-80 transition"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`${p.image.replace('.jpg', '-800.webp')} 800w, ${p.image.replace('.jpg', '-400.webp')} 400w`}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <img
+                    src={p.image}
+                    srcSet={`${p.image} 800w, ${p.image.replace('.jpg', '-400.jpg')} 400w`}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    alt={p.title}
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                    onError={handleImgError}
+                    className="w-full h-56 object-cover group-hover:opacity-80 transition"
+                  />
+                </picture>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">

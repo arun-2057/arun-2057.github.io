@@ -38,13 +38,16 @@ export default function Hero() {
 
 				<div className="flex justify-center md:justify-end card-anim">
 					<div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-lg transform hover:scale-105 transition">
-						<img
+						<picture>
+							<source type="image/webp" srcSet={`${profile.replace('.jpg','-400.webp')} 400w, ${profile.replace('.jpg','-200.webp')} 200w`} sizes="(max-width: 768px) 50vw, 200px" />
+							<img
 							src={profile}
+						srcSet={`${profile.replace('.jpg','-400.jpg')} 400w, ${profile.replace('.jpg','-200.jpg')} 200w`}
+						sizes="(max-width: 768px) 50vw, 200px"
 							alt="Headshot of Arun Lama"
 							className="w-full h-full object-cover"
 							loading="lazy"
-						/>
-					</div>
+						/>						</picture>					</div>
 				</div>
 			</div>
 		</section>
