@@ -1,0 +1,25 @@
+{
+  "name": "Arun Lama",
+  "short_name": "ArunLama",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5a4",
+  "icons": [
+    {
+      "src": "/images/__results___9_0.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/__results___13_0.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/__results___7_0.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
