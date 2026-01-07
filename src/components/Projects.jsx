@@ -5,14 +5,14 @@ export default function Projects() {
       desc: 'Telecom churn modeling with feature engineering and XGBoost ensemble.',
       tags: ['Python', 'XGBoost', 'Feature Engineering'],
       link: 'https://www.kaggle.com/code/zorornoa/churn-analysis',
-      image: '/images/__results___7_0.png',
+      image: '/images/results_7_0.png',
     },
     {
       title: 'Winter_Food_ analysis',
       desc: 'Exploratory data analysis of winter food sales using Pandas and Seaborn.',
       tags: ['EDA', 'Seaborn', 'Pandas'],
       link: 'https://www.kaggle.com/code/zorornoa/winter-food-analysis',
-      image: '/images/__results___13_0.png',
+      image: '/images/results_13_0.png',
     },
     {
       title: 'Mental Health Analysis App',
@@ -26,7 +26,7 @@ export default function Projects() {
       desc: 'Exploratory data analysis of Premier League stats using Pandas and Matplotlib.',
       tags: ['EDA', 'Matplotlib', 'Pandas'],
       link: 'https://www.kaggle.com/code/zorornoa/premier-league-analysis',
-      image: '/images/__results___9_0.png',
+      image: '/images/results_9_0.png',
     }
   ]
 
